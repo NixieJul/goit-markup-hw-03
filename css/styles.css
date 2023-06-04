@@ -22,14 +22,14 @@ ul {
 }
 
 img {
-display: block;
+  display: block;
 }
 
 .container {
   max-width: 1158px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -80,7 +80,7 @@ display: block;
 .header-container {
   display: flex;
   align-items: center;
-  padding: 0 15px 0 15px
+  padding: 0 15px 0 15px;
 }
 
 .header-nav {
@@ -109,7 +109,6 @@ display: block;
   display: flex;
   gap: 40px;
   margin-left: 76px;
-  
 }
 .header-menu-item {
   padding: 24px 0;
@@ -120,7 +119,7 @@ display: block;
   line-height: 1.5;
   color: var(--dark);
   letter-spacing: 0.02em;
-   padding: 24px 0;
+  padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -199,7 +198,6 @@ display: block;
 
 /**---------------GOALS---------------*/
 
-
 .goals-container {
 }
 
@@ -258,7 +256,6 @@ display: block;
 
 .team-container {
   margin: auto;
-  
 }
 
 .team {
@@ -307,7 +304,7 @@ display: block;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--text);;
+  color: var(--text);
 }
 
 /**--------------FOOTER-------------*/
@@ -315,13 +312,13 @@ display: block;
 .footer-container {
   display: flex;
   flex-direction: column;
- 
+
   gap: 16px;
 }
 
 .footer {
   background: var(--dark);
-   padding: 100px 0;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -394,7 +391,7 @@ display: block;
 .button-filter:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
-  border: 1px solid transparent
+  border: 1px solid transparent;
 }
 
 /**--------IMAGES-----------*/
