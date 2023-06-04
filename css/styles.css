@@ -29,14 +29,10 @@ display: block;
   max-width: 1158px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px
 }
 
-.section {
-  padding: 0 15px;
-}
-
-
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -47,6 +43,10 @@ display: block;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section {
+  padding: 0 15px;
 }
 
 .list {
@@ -98,7 +98,7 @@ display: block;
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--primary-brand);
-  margin-right: 76px
+  margin-right: 76px;
 }
 
 .logo-web {
@@ -110,9 +110,10 @@ display: block;
   padding: 24px 0;
   gap: 40px;
   margin-left: 76px;
-  padding: 24px 0
+  
 }
 .header-menu-item {
+  padding: 24px 0;
 }
 .header-menu-link {
   font-weight: 500;
@@ -157,7 +158,7 @@ display: block;
 }
 
 .sol-container {
-  padding: 188px 0
+  padding: 188px 0;
 }
 
 .title-sol {
@@ -181,12 +182,12 @@ display: block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  min-width: 169px;
   height: 56px;
   color: var(--white-background);
   background-color: var(--primary-brand);
   cursor: pointer;
   display: block;
+  min-width: 169px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -200,7 +201,7 @@ display: block;
 
 
 .goals-container {
-  padding: 120px 0 
+  padding: 120px 0; 
 }
 
 .goals {
@@ -218,7 +219,7 @@ display: block;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 .goals-item-text {
   font-size: 16px;
@@ -230,11 +231,12 @@ display: block;
 /**-----------------WHAT?-------------*/
 
 .what-container {
-  padding-bottom: 120px;
+  
   margin: auto;
 }
 
 .what {
+  padding-bottom: 120px;
 }
 .what-title {
   font-size: 36px;
@@ -258,11 +260,12 @@ display: block;
 
 .team-container {
   margin: auto;
-  padding: 120px 0;
+  
 }
 
 .team {
   background: var(--light);
+  padding: 120px 0;
 }
 
 .team-title {
@@ -314,17 +317,13 @@ display: block;
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
+ 
   gap: 16px;
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer {
   background: var(--dark);
+   padding: 100px 0;
 }
 
 .footer-logo {
@@ -336,6 +335,8 @@ display: block;
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--primary-brand);
+   display: inline-block;
+  margin-bottom: 16px;
 }
 
 .foot {
