@@ -35,6 +35,20 @@ display: block;
   padding: 0 15px;
 }
 
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -66,6 +80,7 @@ display: block;
 .header-container {
   display: flex;
   align-items: center;
+  padding: 0 15px 0 15px
 }
 
 .header-nav {
@@ -83,6 +98,7 @@ display: block;
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--primary-brand);
+  margin-right: 76px
 }
 
 .logo-web {
@@ -94,6 +110,7 @@ display: block;
   padding: 24px 0;
   gap: 40px;
   margin-left: 76px;
+  padding: 24px 0
 }
 .header-menu-item {
 }
@@ -140,7 +157,7 @@ display: block;
 }
 
 .sol-container {
-  padding: 188px 292px;
+  padding: 188px 0
 }
 
 .title-sol {
@@ -164,7 +181,7 @@ display: block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   color: var(--white-background);
   background-color: var(--primary-brand);
@@ -181,9 +198,9 @@ display: block;
 
 /**---------------GOALS---------------*/
 
+
 .goals-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0 
 }
 
 .goals {
@@ -201,6 +218,7 @@ display: block;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px
 }
 .goals-item-text {
   font-size: 16px;
@@ -212,7 +230,7 @@ display: block;
 /**-----------------WHAT?-------------*/
 
 .what-container {
-  padding: 0 156px 120px;
+  padding-bottom: 120px;
   margin: auto;
 }
 
@@ -233,17 +251,20 @@ display: block;
   gap: 24px;
 }
 .what-menu-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /**----------TEAM------------*/
 
 .team-container {
   margin: auto;
+  padding: 120px 0;
 }
 
 .team {
   background: var(--light);
 }
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -251,21 +272,26 @@ display: block;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
+
 .team-menu {
   background-color: var(--light);
   display: flex;
   gap: 24px;
   padding-bottom: 120px;
-  width: calc((100%-72px) / 4);
 }
 
 .team-menu-item {
   background: var(--white-background);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
+
+.tmenu-container {
+  padding: 32px 16px;
+}
+
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -273,15 +299,14 @@ display: block;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--text);
-  padding: 8px 68px 32px;
+  color: var(--text);;
 }
 
 /**--------------FOOTER-------------*/
@@ -289,8 +314,13 @@ display: block;
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 100px 1020px 100px 0;
+  padding: 100px 0;
   gap: 16px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer {
@@ -323,6 +353,11 @@ display: block;
 /*!-----------PORTFOLIO-------------*/
 
 /**-----FILTERS-------*/
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .filtr-container {
   justify-content: center;
@@ -360,6 +395,7 @@ display: block;
 .button-filter:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
+  border: 1px solid transparent
 }
 
 /**--------IMAGES-----------*/
@@ -372,15 +408,14 @@ display: block;
 }
 .portfolio-item {
   background: #ffffff;
-  
+  width: calc((100% - 48px) / 3);
 }
+
 .potfolio-link {
 }
 
 .text-container {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -391,6 +426,7 @@ display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-weight: 400;
