@@ -312,7 +312,6 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-
   gap: 16px;
 }
 
@@ -322,6 +321,7 @@ img {
 }
 
 .footer-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -331,7 +331,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-brand);
   margin-bottom: 16px;
-  display: inline-block;
+  
 }
 
 .foot {
