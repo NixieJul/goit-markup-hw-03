@@ -107,7 +107,6 @@ display: block;
 
 .header-menu {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
   margin-left: 76px;
   
@@ -121,6 +120,7 @@ display: block;
   line-height: 1.5;
   color: var(--dark);
   letter-spacing: 0.02em;
+   padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -155,10 +155,10 @@ display: block;
 
 .sol {
   background: var(--dark);
+  padding: 188px 0;
 }
 
 .sol-container {
-  padding: 188px 0;
 }
 
 .title-sol {
@@ -201,10 +201,10 @@ display: block;
 
 
 .goals-container {
-  padding: 120px 0; 
 }
 
 .goals {
+  padding: 120px 0;
 }
 .goals-menu {
   display: flex;
@@ -231,8 +231,6 @@ display: block;
 /**-----------------WHAT?-------------*/
 
 .what-container {
-  
-  margin: auto;
 }
 
 .what {
@@ -335,8 +333,8 @@ display: block;
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--primary-brand);
-   display: inline-block;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .foot {
@@ -355,7 +353,7 @@ display: block;
 
 /**-----FILTERS-------*/
 
-.section {
+.portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
